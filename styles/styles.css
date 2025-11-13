@@ -271,7 +271,7 @@ input:focus,textarea:focus {
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: -40vh;
+    margin-top: -20vh;
 }
 .tech .badges img {
     height: 32px;
@@ -325,3 +325,4 @@ input:focus,textarea:focus {
     from { transform: scale(.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
+
