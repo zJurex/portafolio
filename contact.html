@@ -54,29 +54,28 @@
 
     <h2 class="section-title">Contacto</h2>
 
-    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
+    <form action="https://formspree.io/f/xyzaabcd" method="POST" class="contact-form">
 
-        <div class="field">
-            <label>Nombre</label>
-            <input id="name" name="nombre" required>
-        </div>
+    <div class="field">
+        <label>Nombre</label>
+        <input id="name" name="nombre" required>
+    </div>
 
-        <div class="field">
-            <label>Email</label>
-            <input id="email" type="email" name="email" required>
-        </div>
+    <div class="field">
+        <label>Email</label>
+        <input id="email" type="email" name="email" required>
+    </div>
 
-        <div class="field">
-            <label>Mensaje</label>
-            <textarea id="message" rows="5" name="mensaje" required></textarea>
-        </div>
+    <div class="field">
+        <label>Mensaje</label>
+        <textarea id="message" rows="5" name="mensaje" required></textarea>
+    </div>
 
-        <button class="btn btn-primary" type="submit">Enviar</button>
-        <p id="formStatus" class="form-status"></p>
-    </form>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+</form>
 
 </main>
 <script src="scripts/app.js" defer></script>
 </body>
 </html>
+
