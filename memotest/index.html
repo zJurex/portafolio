@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Memotest — Mini Game</title>
+
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<main>
+  <section class="banner">
+    <h1>¡Desafía tu memoria!</h1>
+    <p>Encuentra todas las parejas para ganar.</p>
+    <button id="startGameBtn" class="btn-primary">Jugar</button>
+  </section>
+
+  <div id="game"></div>
+</main>
+
+<!-- Modal de mensaje -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <p id="modal-text"></p>
+    <button id="modal-ok" class="btn-primary">OK</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

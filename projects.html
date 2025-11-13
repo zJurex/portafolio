@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- meta seo y demas -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>zJurex — Proyectos</title>
+        <meta name="description" content="Lista completa de proyectos de zJurex — Desarrollo web, videojuegos, Unity, C#, JavaScript, y más.">
+        <meta name="keywords" content="zjurex, proyectos, portfolio, unity, c#, javascript, game dev, desarrollo web">
+        <meta property="og:title" content="Proyectos — zJurex">
+        <meta property="og:description" content="Explora los proyectos creados por zJurex: videojuegos, webs y más.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="favicon.png">
+
+        <!--links-->
+        <link rel="icon" type="image/png" href="assets/logo.png">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--bg-->
+        <div class="bg-blobs">
+            <div class="blob blob-violet"></div>
+            <div class="blob blob-coral"></div>
+            <div class="blob blob-blue"></div>
+        </div>
+        <!-- navbar -->
+        <header class="site-header">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="zJurex Logo" class="logo-img">
+                Justo
+            </a>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="contact.html">Contacto</a>
+            </nav>
+            <button id="themeToggle" class="btn btn-ghost">Tema</button>
+        </header>
+        <!-- contenido -->
+        <main class="section">
+        <h2 class="section-title">Todos mis Proyectos</h2>
+
+        <div class="grid projects">
+
+            <!-- Bounce Man -->
+            <article class="card project-card" data-project="bounce">
+            <h3>Bounce Man</h3>
+            <p>Plataformas 2D — Unity/C#</p>
+            </article>
+
+            <!-- LudopatiaARG -->
+            <article class="card project-card" data-project="ludopatia">
+            <h3>LudopatiaARG</h3>
+            <p>Web accesible — HTML/CSS/JS</p>
+            </article>
+
+            <!-- JordanMP -->
+            <article class="card project-card" data-project="jordan">
+                <h3>JordanMP</h3>
+                <p>Tienda de Ropa, no funcional, Moderna, enfocada en la seccion Jordan de Nike</p>
+                </article>
+        <!--memotest-->
+                <article class="card project-card" data-project="memotest">
+        <h3>Mini-Game: Memotest</h3>
+        <p>Juego web de memoria simple creado en JavaScript.</p>
+        <button class="btn btn-outline">Jugar</button>
+        </article>
+
+
+            <!-- proximos -->
+            <article class="card project-card" data-project="placeholder">
+            <h3>Próximo Proyecto</h3>
+            <p>En desarrollo…</p>
+            </article>
+
+        </div>
+        </main>
+
+        <!-- modal -->
+        <div id="projectModal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <div id="modalBody"></div>
+        </div>
+        </div>
+
+        <!-- modal memotest -->
+        <div id="gameModal" class="modal hidden">
+        <div class="modal-content game-box">
+            <button id="closeGame" class="modal-close">×</button>
+            <iframe src="memotest/index.html" class="game-frame" title="Memotest"></iframe>
+        </div>
+        </div>
+
+        <script src="scripts/app.js" defer></script>
+    </body>
+</html>

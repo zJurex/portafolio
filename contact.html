@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--meta seo y demas-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto — zJurex</title>
+    <meta name="description" content="Contacta a zJurex — Desarrollador Full-Stack & Game Developer. Consultas, proyectos y colaboraciones.">
+    <meta name="keywords" content="contacto, email, desarrollador, programador, argentina, zJurex">
+    <meta name="author" content="zJurex">
+    <meta property="og:title" content="Contacto — zJurex">
+    <meta property="og:description" content="Comunicate con zJurex para proyectos y colaboraciones.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.png">
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- links -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- bg -->
+<div class="bg-blobs">
+    <div class="blob blob-violet"></div>
+    <div class="blob blob-coral"></div>
+    <div class="blob blob-blue"></div>
+</div>
+
+<!-- NAV -->
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="zJurex Logo" class="logo-img">
+        Justo
+    </a>
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="projects.html">Proyectos</a>
+    </nav>
+
+    <button id="themeToggle" class="btn btn-ghost">Tema</button>
+</header>
+
+<!-- cotacto -->
+<main class="section">
+
+    <div style="text-align:center; margin-top:22px;">
+        <p>📩 Email: <b>buenaventurajusto96@gmail.com</b></p>
+        <p>🐙 GitHub: <a href="https://github.com/zJurex" target="_blank">github.com/zJurex</a></p>
+        <p>💬 Discord: <b>@zjurex</b></p>
+    </div>
+
+    <h2 class="section-title">Contacto</h2>
+
+    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+
+        <div class="field">
+            <label>Nombre</label>
+            <input id="name" name="nombre" required>
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input id="email" type="email" name="email" required>
+        </div>
+
+        <div class="field">
+            <label>Mensaje</label>
+            <textarea id="message" rows="5" name="mensaje" required></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <p id="formStatus" class="form-status"></p>
+    </form>
+
+</main>
+<script src="scripts/app.js" defer></script>
+</body>
+</html>
