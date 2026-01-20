@@ -75,7 +75,7 @@
             ["Enfoque", "Accesibilidad, alto contraste"],
             ["Descripción", "Sitio web educativo sobre la ludopatía."]
         ],
-        link: "https://github.com/zJurex/LudopatiaARG"
+        link: "https://ludopatia.netlify.app/"
         },
 
         jordan: {
@@ -141,3 +141,4 @@
     closeGame?.addEventListener("click", () => {
         gameModal.classList.add("hidden");
     });
+
